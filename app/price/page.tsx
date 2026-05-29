@@ -4,7 +4,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Price',
   description:
-    'UI/UXデザイナー 三浦 凛のサービスと料金。LP・コーポレート／ブランドサイト・UI/UXデザイン・撮影ディレクションをパッケージ別にご案内します。',
+    'sen. のサービスと料金。LP・コーポレート／ブランドサイト・UI/UXデザイン・撮影ディレクションをパッケージ別にご案内します。',
 };
 
 type PriceTier = {
@@ -36,7 +36,7 @@ const services: PriceService[] = [
       {
         name: 'LP / ESSENTIAL',
         price: '¥50,000',
-        subtitle: 'STUDIOテンプレートをベースに',
+        subtitle: 'STUDIOで、軽やかにはじめる',
         pitch: 'まずWebが必要、というご相談に。',
         items: [
           'ヒアリング（1回 / 60分）',
@@ -90,7 +90,7 @@ const services: PriceService[] = [
       {
         name: 'HP / ESSENTIAL',
         price: '¥150,000',
-        subtitle: 'STUDIOテンプレートで5〜8ページ構成',
+        subtitle: 'STUDIOで、軽やかにはじめる',
         pitch: '事業のはじまりに、まずひとつの顔を。',
         items: [
           'STUDIOテンプレートからカスタマイズ',
@@ -157,16 +157,15 @@ const services: PriceService[] = [
       },
       {
         name: 'UI/UX / MONTHLY',
-        price: '¥250,000',
-        priceUnit: '/ 月',
+        price: '応相談',
         subtitle: '継続伴走型',
         pitch: '既存サービスの改善を、月単位で。',
         items: [
-          '週1MTG（オンライン）',
-          '週20時間想定',
+          '週MTG・関与時間はご相談に応じて調整',
           'UI改善・新機能設計',
           'データ分析と改善提案',
           '最低3ヶ月から、以後1ヶ月単位で更新',
+          'ご予算・期間に応じてお見積りいたします',
         ],
       },
     ],

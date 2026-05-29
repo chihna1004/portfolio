@@ -3,7 +3,7 @@ export default function Footer() {
     <footer className="site-footer">
       <div className="site-footer__row">
         <div>© 2026 &nbsp; sen.</div>
-        <div>TOKYO&nbsp;/&nbsp;LAST UPDATE 2026.05</div>
+        <div>LAST UPDATE 2026.05</div>
       </div>
     </footer>
   );

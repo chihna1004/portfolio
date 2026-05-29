@@ -6,8 +6,8 @@ import { usePathname } from 'next/navigation';
 const navItems = [
   { href: '/', label: 'Index' },
   { href: '/work', label: 'Work' },
-  { href: '/about', label: 'About' },
   { href: '/price', label: 'Price' },
+  { href: '/about', label: 'About' },
   { href: '/contact', label: 'Contact' },
 ];
 
@@ -23,7 +23,7 @@ export default function Header() {
     <header className="site-header">
       <div className="site-header__inner">
         <Link href="/" className="site-header__brand">
-          sen.<span>UI/UX DESIGNER</span>
+          sen<span className="site-header__dot">.</span>
         </Link>
         <nav className="site-nav" aria-label="Primary">
           {navItems.map((item) => (

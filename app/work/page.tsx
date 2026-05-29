@@ -5,7 +5,7 @@ import { workItems } from '@/lib/cases';
 export const metadata: Metadata = {
   title: 'Work',
   description:
-    'これまでに伴走したプロジェクトのうち、特にデザインの思想がよく現れているものを五件、選びました。',
+    '事業のかたちは、ひとつとして同じものはありません。これまで伴走してきた、いくつかの仕事をご紹介します。',
 };
 
 export default function WorkPage() {
@@ -13,12 +13,12 @@ export default function WorkPage() {
     <>
       <section className="hero wrap">
         <div className="hero__eyebrow reveal">
-          001 &nbsp;/&nbsp; WORK ARCHIVE &nbsp;·&nbsp; 2021 — 2026
+          001 &nbsp;/&nbsp; WORK ARCHIVE &nbsp;·&nbsp; 2023 — 2026
         </div>
         <h1 className="hero__title reveal" data-delay="1">
-          五件の仕事、
+          読まれるための、
           <br />
-          ひとつずつ、丁寧に。
+          確かな設計<em>.</em>
         </h1>
         <p
           className="reveal"
@@ -26,11 +26,11 @@ export default function WorkPage() {
           style={{
             marginTop: 56,
             maxWidth: '32em',
-            color: 'var(--mouse)',
+            color: 'var(--ink-sub)',
             lineHeight: 2,
           }}
         >
-          これまでに伴走したプロジェクトのうち、特にデザインの思想がよく現れているものを五件、選びました。すべて公開の許可をいただいています。
+          事業のかたちは、ひとつとして同じものはありません。だから、ひとつずつ、お話を伺いながら、組み立てる。これまで伴走してきた、いくつかの仕事をご紹介します。
         </p>
       </section>
 
@@ -76,7 +76,7 @@ export default function WorkPage() {
           <h2 className="cta__title reveal" data-delay="1">
             あなたの仕事の、
             <br />
-            静かな手応えを、いっしょに。
+            静かな手応えを、いっしょに<em>.</em>
           </h2>
           <Link className="cta__mail reveal" data-delay="2" href="/contact">
             ご相談・お見積りはこちら<span className="dot"></span>

@@ -3,18 +3,25 @@
 @tailwind utilities;
 
 /* =============================================
-   Portfolio — 三浦 凛 / Miura Rin
-   Design tokens & primitives
+   Portfolio — sen.
+   Design tokens & primitives — 漆喰壁の世界観
    ============================================= */
 
 :root {
-  /* Color */
-  --bg: #F8F6F2;          /* 生成り */
-  --ink: #1A1A1A;         /* 墨 */
-  --mouse: #888888;       /* 鼠 */
-  --rule: #E5E2DC;        /* 罫線 (使用最小限) */
-  --accent: #C8102E;      /* 朱赤 (一点のみ) */
-  --placeholder: #ECE9E2; /* プレースホルダ薄色 */
+  /* Color — 北欧の冬の朝の光 */
+  --bg: #F4F1EB;          /* 漆喰壁 */
+  --bg-alt: #ECE7DC;      /* 一段濃い壁面 */
+  --ink: #2A2622;         /* 墨 ─ 真っ黒は使わない */
+  --ink-sub: #6B655B;     /* 副次テキスト */
+  --ink-mute: #9C9489;    /* キャプション・年号 */
+  --line: #C9C1B2;        /* 細い罫線 */
+  --accent: #8B3A2F;      /* 朱 ─ ごく少量のアクセント */
+  --paper: #FAF8F2;       /* 商品カード背景 */
+
+  /* Legacy aliases (旧クラスとの互換) */
+  --mouse: var(--ink-sub);
+  --rule: var(--line);
+  --placeholder: var(--bg-alt);
 
   /* Type scale (desktop) */
   --t-hero: clamp(44px, 6.4vw, 88px);
@@ -65,6 +72,12 @@ a {
 a:hover { opacity: .55; }
 
 button { font: inherit; color: inherit; background: none; border: 0; cursor: pointer; }
+
+/* 朱色の「.」を全 em のデフォルトに（個別ルールが上書きする） */
+em {
+  font-style: normal;
+  color: var(--accent);
+}
 
 /* =============================================
    Mincho / Gothic class helpers
@@ -123,18 +136,13 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 }
 .site-header__brand {
   font-family: var(--stack-mincho);
-  font-size: 18px;
-  font-weight: 500;
-  letter-spacing: 0.18em;
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  line-height: 1;
 }
-.site-header__brand span {
-  display: inline-block;
-  margin-left: 12px;
-  font-family: var(--stack-mono);
-  font-size: 11px;
-  letter-spacing: 0.2em;
-  color: var(--mouse);
-  vertical-align: 2px;
+.site-header__dot {
+  color: var(--accent);
 }
 .site-nav {
   display: flex;

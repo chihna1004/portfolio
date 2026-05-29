@@ -1,26 +1,27 @@
 import type { Metadata } from 'next';
-import { Shippori_Mincho, Zen_Kaku_Gothic_New, JetBrains_Mono } from 'next/font/google';
+import { Noto_Serif_JP, Cormorant_Garamond, Inter } from 'next/font/google';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Reveal from '@/components/Reveal';
 import './globals.css';
 
-const mincho = Shippori_Mincho({
-  weight: ['400', '500', '600'],
+const mincho = Noto_Serif_JP({
+  weight: ['300', '400', '500'],
   subsets: ['latin'],
   variable: '--font-mincho',
   display: 'swap',
 });
 
-const gothic = Zen_Kaku_Gothic_New({
+const gothic = Inter({
   weight: ['300', '400', '500'],
   subsets: ['latin'],
   variable: '--font-gothic',
   display: 'swap',
 });
 
-const mono = JetBrains_Mono({
-  weight: ['400', '500'],
+const mono = Cormorant_Garamond({
+  weight: ['300', '400', '500'],
+  style: ['normal', 'italic'],
   subsets: ['latin'],
   variable: '--font-mono',
   display: 'swap',
@@ -28,11 +29,11 @@ const mono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: 'sen. — UI/UX Designer / Portfolio',
+    default: 'sen. — UI/UX Designer & Photographer / Portfolio',
     template: '%s — sen. / Portfolio',
   },
   description:
-    'UI/UXデザイナー sen. のポートフォリオ。装飾を引き算する。思想は、残す。',
+    'UI/UXデザイナー兼フォトグラファー sen. のポートフォリオ。装飾を引き算する。思想は、残す。',
   openGraph: {
     type: 'website',
     locale: 'ja_JP',
